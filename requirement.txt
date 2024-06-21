@@ -1,0 +1,3 @@
+flask == 3.0.3
+pillow(PIL) == 10.3.0
+ColorThief == 0.2.1
