@@ -1,0 +1,29 @@
+<!-- templates/result.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Extractor Result</title>
+    <style>
+        .color-box {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            border: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Most Common Colors</h1>
+    <h2>Image: {{ filename }}</h2>
+    {% for color in colors %}
+        <div class="color-box" style="background-color: rgb({{ color[0] }}, {{ color[1] }}, {{ color[2] }});"></div>
+        RGB: {{ color }}
+        <br>
+    {% endfor %}
+    <br>
+    <a href="/">Upload Another Image</a>
+</body>
+</html>
