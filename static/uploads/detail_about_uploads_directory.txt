@@ -1,0 +1,1 @@
+uploads = this will be empty directory because all the uploaded photos are sored in this directory
